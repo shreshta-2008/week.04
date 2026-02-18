@@ -1,0 +1,31 @@
+:root {
+  /* Magical Palette */
+  --mana-blue: #646cff;
+  --mana-hover: #535bf2;
+  --alchemist-green: #61dfba;
+  --void-dark: #242424;
+  --obsidian-bg: #1a1a1a;
+  --parchment-light: #ffffff;
+  
+  /* Transitions */
+  --magic-transition: all 0.3s ease;
+}
+
+/* Dark/Light Logic without Tailwind */
+:root.light {
+  --bg-color: var(--parchment-light);
+  --text-color: #213547;
+}
+
+:root.dark {
+  --bg-color: var(--void-dark);
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}

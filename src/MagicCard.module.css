@@ -1,0 +1,45 @@
+.card {
+  background-color: var(--obsidian-bg);
+  border: 2px solid var(--mana-blue);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(100, 108, 255, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.title {
+  color: var(--alchemist-green);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.magicInput {
+  width: 100%;
+  padding: 0.5rem;
+  background: #000;
+  border: 1px solid var(--mana-blue);
+  color: white;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: var(--mana-blue);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--magic-transition);
+}
+
+.button:hover {
+  background-color: var(--mana-hover);
+  transform: translateY(-2px);
+}
